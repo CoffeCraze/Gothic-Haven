@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gothic Haven - Literatura Gótica</title>
+    <meta name="description" content="Descubra os clássicos e contemporâneos do gênero gótico no Gothic Haven.">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <h1>Gothic Haven</h1>
+            <button class="menu-toggle">Menu</button>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../pages/cultura.html">Cultura</a></li>
+                <li><a href="../pages/literatura.html">Literatura</a></li>
+                <li><a href="../pages/monumentos.html">Monumentos</a></li>
+                <li><a href="#inspiracoes">BETA</a></li>
+                <li><a href="#comunidade">BETA</a></li>
+            </ul>
+    </header>
+    </header>
+
+    <main>
+        <section class="hero parallax">
+            <div class="hero-content">
+                <h1 class="fade-in typing text-shadow">Literatura Gótica</h1>
+                <p class="fade-in text-shadow">Descubra os clássicos e contemporâneos do gênero gótico</p>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2 class="fade-in">Clássicos Góticos</h2>
+            <div class="card-grid">
+                <article class="card fade-in">
+                    <h3>O Castelo de Otranto</h3>
+                    <p>Horace Walpole, 1764</p>
+                    <img src="../img/O Castelo de Otranto.webp"  alt="Capa de O Castelo de Otranto" class="book-cover lazy-load">
+                    <button class="btn modal-trigger" data-modal="#modal-otranto">Saiba mais</button>
+                </article>
+                <article class="card fade-in">
+                    <h3>Frankenstein</h3>
+                    <p>Mary Shelley, 1818</p>
+                    <img src="../img/Capa de Frankenstein.webp"  alt="Capa de Frankenstein" class="book-cover lazy-load">
+                    <button class="btn modal-trigger" data-modal="#modal-frankestein">Saiba mais</button>
+                </article>
+                <article class="card fade-in">
+                    <h3>Drácula</h3>
+                    <p>Bram Stoker, 1897</p>
+                    <img src="../img/Drácula.webp" alt="Capa de Drácula" class="book-cover lazy-load">
+                    <button class="btn modal-trigger" data-modal="#modal-dracula">Saiba mais</button>
+                </article>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2 class="fade-in">Autores Góticos Contemporâneos</h2>
+            <div class="card-grid">
+                <div class="card fade-in">
+                    <h4>Anne Rice</h4>
+                    <p>Conhecida por suas histórias de vampiros e bruxas, incluindo "Entrevista com o Vampiro".</p>
+                    <a href="https://pt.wikipedia.org/wiki/Anne_Rice" class="btn">Explorar obras</a>
+                </div>
+                <div class="card fade-in">
+                    <h4>Neil Gaiman</h4>
+                    <p>Autor de "Coraline" e "Sandman", misturando elementos góticos com fantasia moderna.</p>
+                    <a href="https://recreio.com.br/noticias/vitrine/confira-6-obras-para-conhecer-carreira-de-neil-gaiman.phtml" class="btn">Ver livros</a>
+                </div>
+                <div class="card fade-in">
+                    <h4>Silvia Moreno-Garcia</h4>
+                    <p>Autora de "Mexican Gothic", trazendo uma nova perspectiva ao gênero gótico.</p>
+                    <a href="https://silviamoreno-garcia.com/" class="btn">Descobrir</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2 class="fade-in">Clube do Livro Gótico</h2>
+            <div class="card fade-in">
+                <h3>Junte-se ao nosso Clube do Livro</h3>
+                <p>Participe de discussões mensais sobre clássicos e novos lançamentos da literatura gótica.</p>
+                <form id="book-club-form">
+                    <label for="book-club-email" class="sr-only">Seu e-mail</label>
+                    <input type="email" id="book-club-email" placeholder="Seu e-mail" class="form-input" required>
+                    <button type="submit" class="btn">Inscrever-se</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Gothic Haven. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modais -->
+    <div id="modal-otranto" class="modal" aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Fechar modal">&times;</button>
+            <h2>O Castelo de Otranto</h2>
+            <p>Considerado o primeiro romance gótico, "O Castelo de Otranto" de Horace Walpole estabeleceu muitos dos elementos que definiram o gênero, incluindo:</p>
+            <ul>
+                <li>Ambientação em um castelo antigo</li>
+                <li>Eventos sobrenaturais</li>
+                <li>Personagens atormentados</li>
+                <li>Mistérios e segredos familiares</li>
+            </ul>
+            <p>A obra influenciou gerações de escritores e ajudou a moldar o que conhecemos hoje como literatura gótica.</p>
+        </div>
+    </div>
+    <div id="modal-frankestein" class="modal" aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Fechar modal">&times;</button>
+            <h2>Frankenstein</h2>
+            <p>EM BREVE</p>
+            <p></p>
+        </div>
+    </div>
+    </div>
+    <div id="modal-dracula" class="modal" aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Fechar modal">&times;</button>
+            <h2>Drácula</h2>
+            <p>EM BREVE </p>
+            <p></p>
+        </div>
+    </div>
+    
+    <script src="../main.js"></script>
+</body>
+</html>

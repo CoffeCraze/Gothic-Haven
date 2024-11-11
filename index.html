@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gothic Haven - Página Inicial</title>
+    <meta name="description" content="Explore a fascinante cultura gótica e sua influência na arte, literatura e arquitetura no Gothic Haven." />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Carregamento assíncrono do Font Awesome para melhor performance -->
+    <meta property="og:image" content="https://i.imgur.com/7dGNGs0.png" />
+    <meta property="og:title" content="Gothic Haven - Página Inicial" />
+    <meta property="og:description" content="Explore a fascinante cultura gótica e sua influência na arte, literatura e arquitetura." />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest">
+  </head>
+
+  <body>
+    <header>
+      <nav class="container">
+          <h1>Gothic Haven</h1>
+          <ul>
+              <li><a href="./index.html">Início</a></li>
+              <li><a href="./pages/cultura.html">Cultura</a></li>
+              <li><a href="./pages/literatura.html">Literatura</a></li>
+              <li><a href="./pages/monumentos.html">Monumentoss</a></li>
+              <li><a href="#inspiracoes">BETA</a></li>
+              <li><a href="#comunidade">BETA</a></li>
+          </ul>
+  </header>
+
+    <main>
+      <section id="home" class="hero parallax">
+        <div class="hero-content">
+          <h2 class="fade-in typing text-shadow">Bem-vindo ao Gothic Haven</h2>
+          <p class="fade-in text-shadow">
+            Explore a fascinante cultura gótica e sua influência na arte,
+            literatura e arquitetura.
+          </p>
+          <a href="#explore" class="btn fade-in pulse">Explorar</a>
+        </div>
+      </section>
+
+      <section id="explore" class="container">
+        <h2 class="fade-in typing">Destaques</h2>
+        <div class="card-grid">
+          <article class="card fade-in float glass-effect">
+            <i class="fas fa-skull fa-3x" aria-hidden="true"></i>
+            <h3>Cultura Gótica</h3>
+            <p>Descubra a rica história e evolução do movimento gótico.</p>
+            <a href="../pages/cultura.html" class="btn hover-grow">Saiba mais</a>
+          </article>
+          <article class="card fade-in float glass-effect">
+            <i class="fas fa-book-dead fa-3x" aria-hidden="true"></i>
+            <h3>Literatura Gótica</h3>
+            <p>Explore clássicos e obras contemporâneas do gênero gótico.</p>
+            <a href="../pages/literatura.html" class="btn hover-grow">Explorar</a>
+          </article>
+          <article class="card fade-in float glass-effect">
+            <i class="fas fa-church fa-3x" aria-hidden="true"></i>
+            <h3>Monumentos Góticos</h3>
+            <p>Explore as maravilhas arquitetônicas do estilo gótico</p>
+            <a href="../pages/monumentos.html" class="btn hover-grow">Descobrir</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="stats" class="container">
+        <h2 class="fade-in typing">Nossa Comunidade</h2>
+        <div class="card-grid">
+          <article class="card fade-in glass-effect">
+            <i class="fas fa-users fa-3x" aria-hidden="true"></i>
+            <h3>Membros</h3>
+            <p class="count-up" data-target="5000">0</p>
+          </article>
+          <article class="card fade-in glass-effect">
+            <i class="fas fa-book fa-3x" aria-hidden="true"></i>
+            <h3>Artigos</h3>
+            <p class="count-up" data-target="500">0</p>
+          </article>
+          <article class="card fade-in glass-effect">
+            <i class="fas fa-comments fa-3x" aria-hidden="true"></i>
+            <h3>Discussões</h3>
+            <p class="count-up" data-target="10000">0</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="featured" class="container">
+        <h2 class="fade-in typing">Destaque da Semana</h2>
+        <article class="card fade-in glass-effect visible"> 
+          <img src="./img/caminhodestaque.webp" alt="erro"class="book-cover lazy-load"/>
+          <h3>Em breve o Destaque sobre a Semana</h3>
+          <p>EM BREVE</p>
+          <button class="btn hover-grow modal-trigger" data-modal="#featured-modal">Ler mais</button>
+
+        </article>
+      </section>
+
+      <section id="newsletter" class="container">
+        <h2 class="fade-in typing">Junte-se à nossa Comunidade</h2>
+        <div class="card fade-in">
+          <form id="newsletter-form">
+            <label for="email" class="sr-only">Seu e-mail</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Seu e-mail"
+              class="form-input"
+              required
+            />
+            <button type="submit" class="btn hover-grow">Inscrever-se</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Gothic Haven. Todos os direitos reservados.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"
+            ><i class="fab fa-facebook" aria-hidden="true"></i
+          ></a>
+          <a href="#" aria-label="Instagram"
+            ><i class="fab fa-instagram" aria-hidden="true"></i
+          ></a>
+          <a href="#" aria-label="Twitter"
+            ><i class="fab fa-twitter" aria-hidden="true"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <div id="featured-modal" class="modal" aria-hidden="true">
+      <div class="modal-content">
+        <h2>Em breve o Destaque sobre a Semana</h2>
+        <img src="./img/caminhodestaque.webp"data-src="./img/caminhodestaque.webp" alt="Imagem em destaque"class="book-cover lazy-load"/>
+        <p>EM BREVE</p>
+      </div>
+    </div>
+
+    <script src="./main.js" defer></script>
+  </body>
+</html>
