@@ -68,3 +68,5 @@ Agradecemos a todos os colaboradores que tornaram este projeto possível! Seja u
 </table>
 
 Quer ver seu nome aqui? Contribua com uma melhoria ou uma nova funcionalidade e faça parte do Gothic Haven! 🕸️
+
+> Since 04.10.2024 🕸️
