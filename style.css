@@ -17,7 +17,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-body);
 }
 
 /* ===================== Base Styles ===================== */
@@ -27,20 +27,20 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     color: var(--color-text);
-}
 
-h1,
-h2,
-h3,
-h4,
-nav h1 {
-    font-family: var(--font-gothic);
-    margin-bottom: 1rem;
-}
+    & h1,
+    & h2,
+    & h3,
+    & h4,
+    & nav h1 {
+        font-family: var(--font-gothic);
+        margin-bottom: 1rem;
+    }
 
-a:hover {
-    text-decoration: none;
-    opacity: 0.9;
+    & a:hover {
+        text-decoration: none;
+        opacity: 0.9;
+    }
 }
 
 /* ===================== Layout ===================== */
@@ -49,10 +49,10 @@ a:hover {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-}
 
-.container h2 {
-    margin-top: 20px;
+    & h2 {
+        margin-top: 20px;
+    }
 }
 
 /* ===================== Header & Navigation ===================== */
@@ -63,56 +63,56 @@ header {
     z-index: 1000;
     background-color: rgba(18, 14, 22, 0.9);
     transition: 0.3s;
-}
 
-header.scrolled {
-    background-color: rgba(18, 14, 22, 0.98);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-}
+    &.scrolled {
+        background-color: rgba(18, 14, 22, 0.98);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    & nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-nav h1 {
-    font-size: 2rem;
-    color: var(--color-accent);
-}
+        & h1 {
+            font-size: 2rem;
+            color: var(--color-accent);
+        }
 
-nav ul {
-    display: flex;
-    list-style-type: none;
-    gap: 1.5rem;
-}
+        & ul {
+            display: flex;
+            list-style-type: none;
+            gap: 1.5rem;
+        }
 
-nav a {
-    color: var(--color-text);
-    text-decoration: none;
-    position: relative;
-    transition: color 0.3s, transform 0.3s;
-}
+        & a {
+            color: var(--color-text);
+            text-decoration: none;
+            position: relative;
+            transition: color 0.3s, transform 0.3s;
 
-nav a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    bottom: -5px;
-    background-color: var(--color-accent);
-    transform: scaleX(0);
-    transition: transform 0.3s;
-}
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                bottom: -5px;
+                background-color: var(--color-accent);
+                transform: scaleX(0);
+                transition: transform 0.3s;
+            }
 
-nav a:hover {
-    color: var(--color-accent);
-    transform: translateY(-2px);
-}
+            &:hover {
+                color: var(--color-accent);
+                transform: translateY(-2px);
 
-nav a:hover::after {
-    transform: scaleX(1);
+                &::after {
+                    transform: scaleX(1);
+                }
+            }
+        }
+    }
 }
 
 /* ===================== Hero Section ===================== */
@@ -126,24 +126,24 @@ nav a:hover::after {
     position: relative;
     z-index: 1;
     text-align: center;
-}
 
-.hero::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.568);
-    z-index: -1;
-}
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.568);
+        z-index: -1;
+    }
 
-.hero-content {
-    position: relative;
-    z-index: 1;
-    max-width: 800px;
-    padding: 0 20px;
+    & .hero-content {
+        position: relative;
+        z-index: 1;
+        max-width: 800px;
+        padding: 0 20px;
+    }
 }
 
 /* ===================== Buttons ===================== */
@@ -161,13 +161,12 @@ nav a:hover::after {
     text-decoration: none;
     margin-top: 20px;
     transition: 0.3s;
-}
 
-.btn:hover {
-    background-color: var(--color-secondary);
-    transform: translateY(-3px);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-    text-decoration: none;
+    &:hover {
+        background-color: var(--color-secondary);
+        transform: translateY(-3px);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    }
 }
 
 /* ===================== Forms ===================== */
@@ -182,13 +181,13 @@ nav a:hover::after {
     max-width: 300px;
     text-align: center;
     transition: border 0.3s, background 0.3s;
-}
 
-.form-input:focus {
-    border-color: var(--color-accent);
-    background: rgba(255, 255, 255, 0.3);
-    outline: 2px solid var(--color-accent);
-    outline-offset: 2px;
+    &:focus {
+        border-color: var(--color-accent);
+        background: rgba(255, 255, 255, 0.3);
+        outline: 2px solid var(--color-accent);
+        outline-offset: 2px;
+    }
 }
 
 /* ===================== Cards ===================== */
@@ -197,25 +196,25 @@ nav a:hover::after {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
-}
 
-.card {
-    background-color: var(--color-card-bg);
-    border-radius: 15px;
-    padding: 2rem;
-    text-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: 0.3s;
-    backdrop-filter: blur(5px);
-}
+    & .card {
+        background-color: var(--color-card-bg);
+        border-radius: 15px;
+        padding: 2rem;
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        transition: 0.3s;
+        backdrop-filter: blur(5px);
 
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
+        &:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
 
-.card h3 {
-    color: var(--color-accent);
+        & h3 {
+            color: var(--color-accent);
+        }
+    }
 }
 
 /* ===================== Book Cover ===================== */
@@ -224,13 +223,13 @@ nav a:hover::after {
     max-width: 200px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
-    transition: transform .3s
-}
+    transition: transform .3s;
 
-.book-cover:hover,
-.hover-grow:hover,
-.monument-image:hover {
-    transform: scale(1.05)
+    &:hover,
+    &.hover-grow:hover,
+    &.monument-image:hover {
+        transform: scale(1.05);
+    }
 }
 
 /* ===================== Timeline ===================== */
@@ -239,51 +238,51 @@ nav a:hover::after {
     max-width: 800px;
     margin: 0 auto;
     padding: 2rem 0;
-}
 
-.timeline::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 2px;
-    height: 100%;
-    background-color: var(--color-accent);
-    transform: translateX(-50%);
-}
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 2px;
+        height: 100%;
+        background-color: var(--color-accent);
+        transform: translateX(-50%);
+    }
 
-.timeline-item {
-    position: relative;
-    margin-bottom: 2rem;
-    width: 50%;
-    padding: 0 2rem;
-}
+    & .timeline-item {
+        position: relative;
+        margin-bottom: 2rem;
+        width: 50%;
+        padding: 0 2rem;
 
-.timeline-item::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 20px;
-    height: 20px;
-    background-color: var(--color-accent);
-    border-radius: 50%;
-}
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            background-color: var(--color-accent);
+            border-radius: 50%;
+        }
 
-.timeline-item:nth-child(odd) {
-    left: 0;
-    text-align: right;
-}
+        &:nth-child(odd) {
+            left: 0;
+            text-align: right;
 
-.timeline-item:nth-child(odd)::before {
-    right: -10px;
-}
+            &::before {
+                right: -10px;
+            }
+        }
 
-.timeline-item:nth-child(2n) {
-    left: 50%;
-}
+        &:nth-child(2n) {
+            left: 50%;
 
-.timeline-item:nth-child(2n)::before {
-    left: -10px;
+            &::before {
+                left: -10px;
+            }
+        }
+    }
 }
 
 /* ===================== Modal ===================== */
@@ -297,54 +296,54 @@ nav a:hover::after {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(5px);
-}
 
-.modal.show {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    &.show {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-.modal-content {
-    background-color: var(--color-background);
-    padding: 1rem;
-    border-radius: 15px;
-    max-width: 500px;
-    width: 90%;
-    position: relative;
-    text-align: center;
-    border: 1px solid var(--color-accent);
-    box-shadow: 0 0 20px rgba(138, 43, 226, 0.3);
-}
+    & .modal-content {
+        background-color: var(--color-background);
+        padding: 1rem;
+        border-radius: 15px;
+        max-width: 500px;
+        width: 90%;
+        position: relative;
+        text-align: center;
+        border: 1px solid var(--color-accent);
+        box-shadow: 0 0 20px rgba(138, 43, 226, 0.3);
 
-.modal-content button {
-    color: var(--color-text);
-    position: absolute;
-    top: 10px;
-    left: 20px;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    transition: color 0.3s ease-in-out;
-}
+        & button {
+            color: var(--color-text);
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: color 0.3s ease-in-out;
 
-.modal-content button:hover {
-    color: var(--color-accent);
-}
+            &:hover {
+                color: var(--color-accent);
+            }
+        }
 
-.modal-content ul {
-    list-style-position: inside;
-    list-style-type: disclosure-closed;
-    text-align: left;
-    margin: 10px;
-    line-height: 2;
-}
+        & ul {
+            list-style-position: inside;
+            list-style-type: disclosure-closed;
+            text-align: left;
+            margin: 10px;
+            line-height: 2;
+        }
 
-.modal-content p {
-    text-align: justify;
-    margin: 10px;
-    line-height: 1.5;
+        & p {
+            text-align: justify;
+            margin: 10px;
+            line-height: 1.5;
+        }
+    }
 }
 
 /* ===================== Monument Components ===================== */
@@ -353,57 +352,57 @@ nav a:hover::after {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
-}
 
-.monument-card {
-    background-color: var(--color-card-bg);
-    border-radius: 15px;
-    padding: 1rem;
-    text-align: center;
-    transition: 0.3s;
-    cursor: pointer;
-}
+    & .monument-card {
+        background-color: var(--color-card-bg);
+        border-radius: 15px;
+        padding: 1rem;
+        text-align: center;
+        transition: 0.3s;
+        cursor: pointer;
 
-.monument-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
+        &:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
 
-.monument-card.active {
-    border: 2px solid var(--color-accent);
-}
+        &.active {
+            border: 2px solid var(--color-accent);
+        }
 
-.monument-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-    transition: transform 0.3s;
-}
+        & .monument-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            transition: transform 0.3s;
 
-.monument-image:hover {
-    transform: scale(1.05);
-}
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
 
-.monument-details {
-    background-color: var(--color-card-bg);
-    border-radius: 15px;
-    padding: 2rem;
-    margin-top: 2rem;
-}
+    & .monument-details {
+        background-color: var(--color-card-bg);
+        border-radius: 15px;
+        padding: 2rem;
+        margin-top: 2rem;
 
-.monument-details h3 {
-    color: var(--color-accent);
-    margin-bottom: 1rem;
-}
+        & h3 {
+            color: var(--color-accent);
+            margin-bottom: 1rem;
+        }
 
-.monument-details p {
-    margin-bottom: 1rem;
-}
+        & p {
+            margin-bottom: 1rem;
 
-.monument-details p:last-child {
-    margin-bottom: 0;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
 }
 
 /* ===================== Footer ===================== */
@@ -412,24 +411,24 @@ footer {
     padding: 2rem 0;
     margin-top: 4rem;
     text-align: center;
-}
 
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    margin-top: 1.5rem;
-}
+    & .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-top: 1.5rem;
 
-.social-links a {
-    color: var(--color-text);
-    font-size: 1.5rem;
-    transition: 0.3s;
-}
+        & a {
+            color: var(--color-text);
+            font-size: 1.5rem;
+            transition: 0.3s;
 
-.social-links a:hover {
-    color: var(--color-accent);
-    transform: translateY(-3px);
+            &:hover {
+                color: var(--color-accent);
+                transform: translateY(-3px);
+            }
+        }
+    }
 }
 
 /* ===================== Utility Classes ===================== */
@@ -469,10 +468,10 @@ footer {
     cursor: pointer;
     color: var(--color-text);
     font-size: 1.5rem;
-}
 
-.menu-toggle:hover {
-    color: var(--color-accent);
+    &:hover {
+        color: var(--color-accent);
+    }
 }
 
 /* ===================== Animations ===================== */
@@ -529,11 +528,11 @@ footer {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.6s, transform 0.6s;
-}
 
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
+    &.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* ===================== Media Queries ===================== */
@@ -543,7 +542,6 @@ footer {
     }
 
     .card-grid {
-        display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 1rem;
     }
@@ -557,25 +555,24 @@ footer {
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
-    }
 
-    nav ul {
-        display: none;
-        width: 100%;
-        flex-direction: column;
-        text-align: center;
-        padding: 1rem 0;
-    }
+        & ul {
+            display: none;
+            width: 100%;
+            flex-direction: column;
+            text-align: center;
+            padding: 1rem 0;
 
-    nav ul.show {
-        display: flex;
+            &.show {
+                display: flex;
+            }
+        }
     }
 
     .menu-toggle {
         display: block;
     }
 
-    .car,
     .card-grid {
         grid-template-columns: 1fr;
     }
@@ -584,28 +581,19 @@ footer {
         font-size: 2rem;
     }
 
-    .timeline-item:nth-child(2n),
-    .timeline::before {
-        left: 0;
-    }
-
     .timeline-item {
         width: 100%;
         left: 0;
         text-align: left;
         padding-left: 2rem;
+
+        &::before {
+            left: -10px;
+        }
     }
 
-    .timeline-item::before {
-        left: -10px;
-    }
-
-    .lazy-load {
-        transition: opacity 0.3s;
-    }
-
-    .lazy-load:not([src]) {
-        opacity: 0;
+    .timeline::before {
+        left: 0;
     }
 
     .hero {
