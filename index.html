@@ -43,7 +43,7 @@
           <a href="#explore" class="btn fade-in pulse">Explorar</a>
         </div>
       </section>
-
+      
       <section id="explore" class="container">
         <h2 class="fade-in typing">Destaques</h2>
         <div class="card-grid">
@@ -68,6 +68,29 @@
         </div>
       </section>
 
+      <section id="inspiracoes" class="container">
+        <h2 class="fade-in typing">Inspirações Góticas</h2>
+        <div class="card-grid">
+          <article class="card fade-in float glass-effect">
+            <i class="fas fa-paint-brush fa-3x" aria-hidden="true"></i>
+            <h3>Arte</h3>
+            <p>Descubra obras de arte inspiradas na estética gótica.</p>
+            <a href="#" class="btn hover-grow">Ver mais</a>
+          </article>
+          <article class="card fade-in float glass-effect">
+            <i class="fas fa-music fa-3x" aria-hidden="true"></i>
+            <h3>Música</h3>
+            <p>Explore bandas e músicas que capturam o espírito gótico.</p>
+            <a href="#" class="btn hover-grow">Ouvir</a>
+          </article>
+          <article class="card fade-in float glass-effect">
+            <i class="fas fa-film fa-3x" aria-hidden="true"></i>
+            <h3>Cinema</h3>
+            <p>Assista a filmes que definem o gênero gótico.</p>
+            <a href="#" class="btn hover-grow">Assistir</a>
+          </article>
+        </div>
+      
       <section id="stats" class="container">
         <h2 class="fade-in typing">Nossa Comunidade</h2>
         <div class="card-grid">
@@ -89,59 +112,32 @@
         </div>
       </section>
 
-      <section id="featured" class="container">
+      <section id="featured" class="container" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
         <h2 class="fade-in typing">Destaque da Semana</h2>
-        <article class="card fade-in glass-effect visible"> 
-          <img src="./img/caminhodestaque.webp" alt="erro"class="book-cover lazy-load"/>
+        <article class="card fade-in glass-effect visible" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+          <img src="./img/caminhodestaque.webp" alt="erro" class="book-cover lazy-load" style="margin: 0 auto;" />
           <h3>Em breve o Destaque sobre a Semana</h3>
           <p>EM BREVE</p>
           <button class="btn hover-grow modal-trigger" data-modal="#featured-modal">Ler mais</button>
-
         </article>
       </section>
 
-      <section id="newsletter" class="container">
-        <h2 class="fade-in typing">Junte-se à nossa Comunidade</h2>
-        <div class="card fade-in">
-          <form id="newsletter-form">
-            <label for="email" class="sr-only">Seu e-mail</label>
-            <input
-              type="email"
-              id="email"
-              placeholder="Seu e-mail"
-              class="form-input"
-              required
-            />
-            <button type="submit" class="btn hover-grow">Inscrever-se</button>
-          </form>
+      <div id="featured-modal" class="modal" aria-hidden="true">
+        <div class="modal-content">
+          <h2>Em breve o Destaque sobre a Semana</h2>
+          <img src="./img/caminhodestaque.webp"data-src="./img/caminhodestaque.webp" alt="Imagem em destaque"class="book-cover lazy-load"/>
+          <p>EM BREVE</p>
         </div>
-      </section>
+      </div>
+      
     </main>
 
     <footer>
       <div class="container">
         <p>&copy; 2024 Gothic Haven. Todos os direitos reservados.</p>
-        <div class="social-links">
-          <a href="#" aria-label="Facebook"
-            ><i class="fab fa-facebook" aria-hidden="true"></i
-          ></a>
-          <a href="#" aria-label="Instagram"
-            ><i class="fab fa-instagram" aria-hidden="true"></i
-          ></a>
-          <a href="#" aria-label="Twitter"
-            ><i class="fab fa-twitter" aria-hidden="true"></i
-          ></a>
-        </div>
       </div>
     </footer>
 
-    <div id="featured-modal" class="modal" aria-hidden="true">
-      <div class="modal-content">
-        <h2>Em breve o Destaque sobre a Semana</h2>
-        <img src="./img/caminhodestaque.webp"data-src="./img/caminhodestaque.webp" alt="Imagem em destaque"class="book-cover lazy-load"/>
-        <p>EM BREVE</p>
-      </div>
-    </div>
 
     <script src="./main.js" defer></script>
   </body>
